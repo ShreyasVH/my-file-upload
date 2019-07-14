@@ -1,0 +1,7 @@
+{
+  "require": {
+    "ext-phalcon": "^3.4.1",
+    "vlucas/phpdotenv": "*",
+    "phpoption/phpoption": "^1.5"
+  }
+}
