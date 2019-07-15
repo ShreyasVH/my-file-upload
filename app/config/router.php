@@ -2,14 +2,19 @@
 
 use Phalcon\Mvc\Micro\Collection;
 
+//Default Route
 $default = new Collection();
 $default->setHandler('app\controllers\IndexController', true);
+
 $default->get('/', 'indexAction');
+
 $application->mount($default);
 
+//For File Upload
 $upload = new Collection();
 $upload->setHandler('app\controllers\UploadController', true);
-$upload->post('/', 'indexAction');
+
+$upload->post('/file', 'indexAction');
 
 $application->mount($upload);
 

@@ -1,8 +1,5 @@
 <?php
-
-
 namespace app\controllers;
-
 
 use Phalcon\Http\Request\File;
 
