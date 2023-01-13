@@ -1,5 +1,5 @@
 <?php
 
-$dotenv = Dotenv\Dotenv::create(APP_PATH);
+$dotenv = Dotenv\Dotenv::createImmutable(APP_PATH);
 $dotenv->load();
 

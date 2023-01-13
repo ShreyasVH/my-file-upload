@@ -1,7 +1,7 @@
 {
   "require": {
-    "ext-phalcon": "^3.4.1",
-    "vlucas/phpdotenv": "*",
-    "phpoption/phpoption": "^1.5"
+    "vlucas/phpdotenv": "5.5.0",
+    "phpoption/phpoption": "^1.5",
+    "graham-campbell/result-type": "^1.0.2"
   }
 }

@@ -15,4 +15,4 @@ $application = new Micro($di);
 
 include APP_PATH . 'app/config/router.php';
 
-$application->handle();
+$application->handle($_SERVER["REQUEST_URI"]);

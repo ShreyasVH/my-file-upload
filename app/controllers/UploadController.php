@@ -14,7 +14,7 @@ class UploadController extends BaseController
             /* @var File[] $files */
             $files = $this->request->getUploadedFiles();
             $file = $files[0];
-            $fileName = $file->getName();
+            $fileName = time() . '.' . $file->getExtension();
 
             $imageFolder = APP_PATH . 'public/images/';
             if(!file_exists($imageFolder . $folderName))
@@ -23,7 +23,7 @@ class UploadController extends BaseController
             }
 
             $path = $imageFolder . $folderName . '/' . $fileName;
-            $url = getenv('BASE_URL') . 'images/' . $folderName . '/' . $fileName;
+            $url = $_ENV['BASE_URL'] . 'images/' . $folderName . '/' . $fileName;
             $isSuccess = $file->moveTo($path);
             if($isSuccess)
             {
