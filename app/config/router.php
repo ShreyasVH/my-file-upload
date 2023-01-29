@@ -23,26 +23,6 @@ $application->after(function() use($application) {
     $application->response->setContentType('application/json', 'UTF-8');
     $output_content = json_encode($application->getReturnedValue(), JSON_UNESCAPED_SLASHES);
     $application->response->setContent($output_content);
-
-    $origin = '*';
-
-    $application->response->setHeader(
-                'Access-Control-Allow-Origin', 
-                $origin
-            )
-            ->setHeader(
-                'Access-Control-Allow-Methods',
-                'GET,PUT,POST,DELETE,OPTIONS'
-            )
-            ->setHeader(
-                'Access-Control-Allow-Headers',
-                'Origin, X-Requested-With, Content-Range, ' .
-                'Content-Disposition, Content-Type, Authorization'
-            )
-            ->setHeader(
-                'Access-Control-Allow-Credentials', 
-                'true'
-            );
     $application->response->send();
 });
 

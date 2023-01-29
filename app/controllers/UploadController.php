@@ -23,7 +23,7 @@ class UploadController extends BaseController
             }
 
             $path = $imageFolder . $folderName . '/' . $fileName;
-            $url = $_ENV['BASE_URL'] . 'images/' . $folderName . '/' . $fileName;
+            $url = $_ENV['BASE_URL'] . '/images/' . $folderName . '/' . $fileName;
             $isSuccess = $file->moveTo($path);
             if($isSuccess)
             {
@@ -35,6 +35,13 @@ class UploadController extends BaseController
         {
             throw new \Exception("Invalid Request. File Missing", 400);
         }
+
+        $this->handleCORS();
+
         return $output;
+    }
+
+    public function preflightAction() {
+        $this->handleCORS();
     }
 }
