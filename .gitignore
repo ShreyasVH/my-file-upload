@@ -6,3 +6,6 @@ vendor
 TODO.txt
 .envrc
 .DS_Store
+
+server.log
+composerInstall.log
