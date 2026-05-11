@@ -1,4 +1,6 @@
-# php path
+# php 8.4.17 path
 export PATH=
 
 export BASE_URL=
+
+export PORT=
