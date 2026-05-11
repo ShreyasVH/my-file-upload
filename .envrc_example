@@ -1,4 +1,4 @@
-# php 8.4.17 path
+# php 8.5.6 path
 export PATH=
 
 export BASE_URL=
