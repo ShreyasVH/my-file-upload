@@ -1,6 +1,6 @@
 {
   "require": {
-    "vlucas/phpdotenv": "v5.6.3",
+    "vlucas/phpdotenv": "v5.6.4",
     "phpoption/phpoption": "^1.9.5",
     "graham-campbell/result-type": "^1.1.4"
   }
