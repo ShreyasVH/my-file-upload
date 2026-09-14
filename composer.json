@@ -1,7 +1,7 @@
 {
   "require": {
-    "vlucas/phpdotenv": "v5.6.4",
-    "phpoption/phpoption": "^1.9.5",
-    "graham-campbell/result-type": "^1.1.4"
+    "vlucas/phpdotenv": "v5.7.0",
+    "phpoption/phpoption": "1.10.0",
+    "graham-campbell/result-type": "v1.2.0"
   }
 }
